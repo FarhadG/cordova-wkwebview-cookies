@@ -35,6 +35,7 @@ app
     success: isAuthenticated,
     data: {
       date: new Date(),
+      origin: req.headers.origin,
       user: isAuthenticated
         ? { name: 'John Smith', passwordCookie: password }
         : 'Not authorized. Please login'
