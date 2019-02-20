@@ -10,8 +10,12 @@ const
     value: 'SomeSecretPassword'
   },
   REQUEST_ORIGINS = [
-    'ionic://app',
+    // default scheme and hostname
     'ionic://localhost',
+    // custom hostname
+    'ionic://app',
+    // custom scheme and hostname
+    'httpsionic://app',
     'http://localhost:5000',
   ];
 
